@@ -2,7 +2,8 @@
 // const listOfDivs = []
 
 // definisco una costante contenente il mio div contenitore
-resultContainer = document.getElementById("result-container")
+resultContainer = document.createElement("div")
+resultContainer.id = "result-container"
 
 // creo un loop che itera da 1 fino a 100
 for (let i=1; i <= 100; i++){
@@ -39,3 +40,4 @@ for (let i=1; i <= 100; i++){
 }
 
 
+document.getElementsByTagName("body")[0].append(resultContainer)
